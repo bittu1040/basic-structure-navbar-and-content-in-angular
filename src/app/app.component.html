@@ -1,0 +1,24 @@
+<div class="nav">
+some navbar here
+</div> 
+<main class="container">
+
+<div class="controls">
+  <button (click)="addUser()">Add User</button>
+  <button (click)="viewUser()">View User</button>
+
+</div>
+
+ <div class="view">
+  <!-- <div class="nav">
+  some navbar here
+</div>  -->
+
+<div class="comp">
+  <app-add-user *ngIf="viewName==='addUser'"></app-add-user>
+  <app-view-user *ngIf="viewName==='viewUser'"></app-view-user>
+</div>
+
+</div>
+
+</main>
